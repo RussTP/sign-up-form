@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: Norse-Bold;
-    src: url(/font/Norse-Bold.otf);
+    font-family: "Norse-Bold";
+    src: url(/font/Norse-Bold.otf) format("opentype");
 }
 
 
