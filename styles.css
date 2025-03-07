@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 @font-face {
@@ -11,21 +12,26 @@
 
 
 
+/* main background image/layout */
 .container  {
     position: relative;
     height: 100vh;
-    width: 550px;
+    width: 700px;
+    top:0;
+    left:0;
+   
 }
 
 .bgImage {
     position:absolute;
-    width: 550px;
+    width: 700px;
     height: 100vh;
+    object-fit: cover;
 }
 
 .odinBox {
     position: absolute;
-    top: 270px;
+    top: 160px;
     text-align: right;
     padding-right: 150px;
     background: black;
@@ -41,7 +47,7 @@
     position: relative;
     font-size: 80px;
     top: -90px;
-    right: 30px;
+    right: 140px;
 }
 
 
@@ -50,51 +56,108 @@
     z-index: 1;
     height: 110px;
     width: auto;
-    right: 150px;
+    right: 260px;
     top: 15px;
-    border: 1px solid black;
-    
+     
 }
+
+/* headline container*/
 
 .body-container {
 position: absolute;
 width: 100%;
-height: 410px;
+height: 300px;
 top:0;
-left: 550px;
+left: 700px;
 background-color: rgb(241, 241, 241);
 }
 
 .header {
     position: absolute;
-    top: 190px;
+    top: 110px;
     left: 40px;
     max-width: 90ch;
 }
 
+/*Form layout*/
+
 .form-container {
     position: absolute;
-    height:410px;
-    top:400px;
-    left:550px;
+    height:300px;
+    top:350px;
+    left:740px;
 }
 
 .form {
-    position: absolute;
-    top: 120px;
-    left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
     
 }
 
-.account-container {
-    border-top: 4px solid rgba(128, 128, 128, 0.452);
-    box-shadow: -1px -2px 8px gray;
-    height: auto;
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+legend {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 16px;
+    
+}
+
+a {
+    text-decoration: none;
+    color:#596D48;
+}
+
+
+
+input {
+    width: 225px;
+    height: 30px;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 4px;
+    box-shadow:  0px 2px 5px 1px rgb(241, 241, 241);
+    padding: 5px;
+}
+
+input:focus {
+    background-color: #E5E7EB;
+}
+input:hover {
+    border-color: #8d8d8d;
+}
+
+input[type="password"]:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+}
+
+/*create an account layout*/
+
+.account-container {
+    border-top: 2px solid rgb(241, 241, 241);
+    box-shadow:  10px 4px 10px 5px rgb(241, 241, 241);
+    width: 100%;
+    height: auto;
     position: absolute;
-    top: 900px;
-    left: 550px;
+    top: 700px;
+    left: 700px;
     background-color: rgb(241, 241, 241);
+
 }
 
 button {
@@ -124,7 +187,4 @@ button:hover {
     left: 40px;
 }
 
-a {
-    text-decoration: none;
-    color:#596D48;
-}
+
