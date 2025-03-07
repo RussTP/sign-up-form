@@ -67,7 +67,7 @@
 
 .body-container {
 position: absolute;
-width: 100%;
+width: 1300px;
 height: 300px;
 top:0;
 left: 700px;
@@ -156,7 +156,7 @@ input[type="password"]:invalid {
 .account-container {
     border-top: 2px solid rgb(241, 241, 241);
     box-shadow:  10px 4px 10px 5px rgb(241, 241, 241);
-    width: 2100px;
+    width: 1300px;
     height: auto;
     position: absolute;
     top: 350px;
