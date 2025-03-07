@@ -7,7 +7,9 @@
 
 @font-face {
     font-family: "Norse-Bold";
-    src: url(/font/Norse-Bold.otf) format("opentype");
+    src: url("../../sign-up-form/font/Norse-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 
